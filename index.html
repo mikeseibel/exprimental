@@ -1,6 +1,7 @@
 <h1>what's the frequency kenneth</h1>
 <script type="text/javascript">
 setTimeout(function () {
+  alert('message sent');
   window.opener.postMessage(JSON.stringify({event: 'aaa.bbb', data: 'bbb'}), '*');
 }, 10000);
 </script>
