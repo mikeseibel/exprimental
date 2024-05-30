@@ -2,6 +2,11 @@
 <script type="text/javascript">
 setTimeout(function () {
   alert('message sent');
-  window.opener.postMessage(JSON.stringify({event: 'aaa.bbb', data: 'bbb'}), '*');
+  window.opener.postMessage(
+    JSON.stringify({
+            event: 'xxx.yyy',
+            'xxx.key_remote': 'GSD_test_test_test_123_rk',
+            pageUrl: document.location.href,
+          }), '*');
 }, 10000);
 </script>
